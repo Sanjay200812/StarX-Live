@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarX Live | Official Rockband Site & World Tour 2026</title>
+  <meta name="description" content="Official website of StarX Live. Releasing 30 new original songs on YouTube! Live tour dates, band members, photo gallery, and press booking contact.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <i class="fas fa-star logo-star"></i>
+        <span>STAR<span style="color:var(--primary-neon);">X</span> LIVE</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#members" class="nav-link">Members</a></li>
+        <li><a href="#tour" class="nav-link">Tour Dates</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://youtube.com" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem; background: #ff0000; border: none; box-shadow: 0 0 15px rgba(255,0,0,0.4);">
+          <i class="fab fa-youtube"></i> 30 SONGS ON YOUTUBE
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/hero.png" alt="StarX Live Concert Stage">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="section-tag"><i class="fas fa-bolt"></i> Official Launch & World Tour</span>
+        <h1 class="heading-xl hero-title">ELECTRIC ENERGY. <span class="gradient-text">UNTAMED SOUND.</span></h1>
+        <p class="hero-subtitle">Experience the raw sonic power of StarX Live. We are launching our musical journey by releasing <strong>30 original rock songs on YouTube</strong>! Headlining major stadium stages starting from Hyderabad.</p>
+        
+        <div class="hero-btns">
+          <a href="https://youtube.com" target="_blank" class="btn btn-primary" style="background: linear-gradient(135deg, #ff0000, #cc0000);">
+            <i class="fab fa-youtube"></i> WATCH 30 SONGS ON YOUTUBE
+          </a>
+          <a href="#tour" class="btn btn-secondary">
+            <i class="fas fa-calendar-alt"></i> VIEW TOUR DATES
+          </a>
+        </div>
+
+        <!-- YouTube 30 Songs Announcement Banner -->
+        <div style="background: linear-gradient(135deg, rgba(255, 0, 85, 0.15), rgba(0, 229, 255, 0.15)); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 16px 20px; margin-top: 24px; display: flex; align-items: center; gap: 16px; backdrop-filter: blur(10px);">
+          <i class="fab fa-youtube" style="font-size: 2.2rem; color: #ff0000; filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.6));"></i>
+          <div>
+            <div style="font-weight: 800; font-size: 0.95rem; color: #fff;">SPECIAL YOUTUBE LAUNCH</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">Releasing <strong>30 original songs</strong> on YouTube! Subscribe to catch the official audio & video drops.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Tour Countdown Box (10 Days to Hyderabad Show) -->
+      <div class="countdown-box">
+        <div class="countdown-header">
+          <span class="countdown-label"><i class="fas fa-clock"></i> COUNTDOWN TO HYDERABAD SHOW</span>
+          <span class="tour-status-badge" style="background: rgba(255, 0, 85, 0.2); color: var(--primary-neon);">10 DAYS LEFT</span>
+        </div>
+
+        <div class="timer-grid">
+          <div class="timer-item">
+            <div class="timer-val" id="days">10</div>
+            <div class="timer-lbl">Days</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-val" id="hours">14</div>
+            <div class="timer-lbl">Hours</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-val" id="minutes">32</div>
+            <div class="timer-lbl">Minutes</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-val" id="seconds">08</div>
+            <div class="timer-lbl">Seconds</div>
+          </div>
+        </div>
+
+        <div class="countdown-show-info">
+          <div>
+            <div class="show-venue">Gachibowli Stadium / HITEX</div>
+            <div class="show-city"><i class="fas fa-map-marker-alt" style="color:var(--cyan-neon);"></i> Hyderabad, Telangana • India</div>
+          </div>
+          <a href="#tour" class="btn btn-cyan" style="padding: 8px 18px; font-size: 0.8rem;">VIEW DETAILS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Band Story Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card">
+          <span class="section-tag">BAND MANIFESTO</span>
+          <h2 class="heading-lg" style="margin-bottom: 20px;">RISING FROM THE <span class="gradient-text">UNDERGROUND</span></h2>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">
+            Founded in 2018, <strong>StarX Live</strong> reshaped modern rock music by fusing heavy guitar riffage with high-octane stadium energy and futuristic synth landscapes. We are kicking off our global campaign by releasing <strong>30 brand new original songs on YouTube</strong>, followed by live arena performances starting right from Hyderabad, India!
+          </p>
+          <p style="color: var(--text-muted);">
+            With 4 platinum-certified albums and over 12 million monthly listeners worldwide, StarX Live continues to push the boundaries of live rock performance.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-num">30</div>
+              <div class="stat-label">Songs on YouTube</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">10</div>
+              <div class="stat-label">Days to Hyderabad Show</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">5</div>
+              <div class="stat-label">World Tours</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">12M+</div>
+              <div class="stat-label">Global Streams</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-glass);">
+            <img src="assets/hero.png" alt="StarX Live Band on Stage" style="width: 100%; height: 500px; object-fit: cover;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to top, var(--bg-dark) 0%, transparent 60%);"></div>
+            <div style="position: absolute; bottom: 30px; left: 30px; right: 30px;">
+              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #fff;">"30 NEW SONGS. 1 EPIC ADVENTURE. LIVE FROM HYDERABAD."</div>
+              <div style="color: var(--cyan-neon); font-weight: 700; margin-top: 6px;">— Xander Vance, Lead Vocalist</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Band Members Section -->
+  <section class="section" style="background: rgba(255,255,255,0.01);" id="members">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">THE LINEUP</span>
+        <h2 class="heading-lg">MEET THE <span class="gradient-text">BAND MEMBERS</span></h2>
+        <p class="section-desc">The four powerhouses behind the explosive sound of StarX Live. Click any member card to view their full gear breakdown & bio.</p>
+      </div>
+
+      <div class="members-grid">
+        <!-- Member 1 -->
+        <div class="member-card" data-member="vocalist">
+          <div class="member-img-wrap">
+            <svg class="member-img" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" style="background: radial-gradient(circle, #25102a 0%, #0c0914 100%);">
+              <defs>
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ff0055"/>
+                  <stop offset="100%" stop-color="#00e5ff"/>
+                </linearGradient>
+              </defs>
+              <circle cx="200" cy="180" r="80" fill="url(#grad1)" opacity="0.3"/>
+              <path d="M140 240 Q200 130 260 240 T320 420 L80 420 Z" fill="#1a1b2b" stroke="url(#grad1)" stroke-width="3"/>
+              <text x="200" y="200" text-anchor="middle" fill="#fff" font-family="Syne" font-size="28" font-weight="800">XANDER</text>
+              <text x="200" y="230" text-anchor="middle" fill="#00e5ff" font-family="Inter" font-size="14" font-weight="700">LEAD VOCALS & GUITAR</text>
+            </svg>
+            <div class="member-overlay"></div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Frontman & Rhythm</span>
+            <h3 class="member-name">Xander "Viper" Vance</h3>
+            <p class="member-bio-snippet">Multi-octave vocal range and electrifying stage command commanding stadium crowds.</p>
+            <div class="member-action">VIEW FULL BIO & GEAR <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="member-card" data-member="guitarist">
+          <div class="member-img-wrap">
+            <svg class="member-img" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" style="background: radial-gradient(circle, #102636 0%, #0c0914 100%);">
+              <circle cx="200" cy="180" r="80" fill="url(#grad1)" opacity="0.3"/>
+              <path d="M130 240 Q200 120 270 240 T330 420 L70 420 Z" fill="#152232" stroke="#00e5ff" stroke-width="3"/>
+              <text x="200" y="200" text-anchor="middle" fill="#fff" font-family="Syne" font-size="28" font-weight="800">NOVA</text>
+              <text x="200" y="230" text-anchor="middle" fill="#ff0055" font-family="Inter" font-size="14" font-weight="700">LEAD GUITAR</text>
+            </svg>
+            <div class="member-overlay"></div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Shred Virtuoso</span>
+            <h3 class="member-name">Nova "Riff" Sterling</h3>
+            <p class="member-bio-snippet">Crafting blistering guitar solos and melodic hooks that define StarX Live's signature sound.</p>
+            <div class="member-action">VIEW FULL BIO & GEAR <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="member-card" data-member="bassist">
+          <div class="member-img-wrap">
+            <svg class="member-img" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" style="background: radial-gradient(circle, #19142b 0%, #0c0914 100%);">
+              <circle cx="200" cy="180" r="80" fill="url(#grad1)" opacity="0.3"/>
+              <path d="M140 230 Q200 140 260 230 T320 420 L80 420 Z" fill="#1e1832" stroke="#ffcc00" stroke-width="3"/>
+              <text x="200" y="200" text-anchor="middle" fill="#fff" font-family="Syne" font-size="28" font-weight="800">AXEL</text>
+              <text x="200" y="230" text-anchor="middle" fill="#ffcc00" font-family="Inter" font-size="14" font-weight="700">BASS & SYNTHS</text>
+            </svg>
+            <div class="member-overlay"></div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Low End & Synths</span>
+            <h3 class="member-name">Axel "Thunder" Stone</h3>
+            <p class="member-bio-snippet">Architect of the crushing basslines and heavy electronic soundscapes.</p>
+            <div class="member-action">VIEW FULL BIO & GEAR <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="member-card" data-member="drummer">
+          <div class="member-img-wrap">
+            <svg class="member-img" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" style="background: radial-gradient(circle, #2b1414 0%, #0c0914 100%);">
+              <circle cx="200" cy="180" r="80" fill="url(#grad1)" opacity="0.3"/>
+              <path d="M130 240 Q200 130 270 240 T330 420 L70 420 Z" fill="#2d171a" stroke="#ff0055" stroke-width="3"/>
+              <text x="200" y="200" text-anchor="middle" fill="#fff" font-family="Syne" font-size="28" font-weight="800">ROCCO</text>
+              <text x="200" y="230" text-anchor="middle" fill="#00e5ff" font-family="Inter" font-size="14" font-weight="700">DRUMS & PERCUSSION</text>
+            </svg>
+            <div class="member-overlay"></div>
+          </div>
+          <div class="member-info">
+            <span class="member-role">Rhythm Engine</span>
+            <h3 class="member-name">Rocco "Beat" Ramirez</h3>
+            <p class="member-bio-snippet">High-energy precision drumming driving relentless rock grooves.</p>
+            <div class="member-action">VIEW FULL BIO & GEAR <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Schedule Section -->
+  <section class="section" style="background: rgba(0,0,0,0.3);" id="tour">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LIVE DATES</span>
+        <h2 class="heading-lg">STARX WORLD <span class="gradient-text">TOUR 2026</span></h2>
+        <p class="section-desc">Upcoming stadium concerts & festival appearances starting in Hyderabad, India.</p>
+      </div>
+
+      <div class="tour-filters">
+        <button class="filter-btn active" data-filter="all">All Dates</button>
+        <button class="filter-btn" data-filter="asia">Asia / India</button>
+        <button class="filter-btn" data-filter="na">North America</button>
+        <button class="filter-btn" data-filter="eu">Europe</button>
+      </div>
+
+      <div class="tour-list">
+        <!-- Show 1 - Hyderabad Opening Concert -->
+        <div class="tour-card" data-region="asia" style="border-color: rgba(255, 0, 85, 0.5); background: linear-gradient(135deg, rgba(255, 0, 85, 0.08), rgba(18, 19, 28, 0.9));">
+          <div class="tour-date-box">
+            <span class="tour-day" style="color:var(--primary-neon);">IN 10 DAYS</span>
+            <span class="tour-month" style="color:#fff; font-weight:800;">HYDERABAD SHOW</span>
+          </div>
+          <div class="tour-venue-info">
+            <span class="tour-city" style="color:var(--cyan-neon);">Hyderabad, Telangana</span>
+            <span class="tour-arena"><i class="fas fa-map-marker-alt"></i> Gachibowli Stadium / HITEX Center</span>
+          </div>
+          <div>
+            <span class="status-badge status-selling" style="background: rgba(255, 0, 85, 0.2); color: var(--primary-neon); border-color: var(--primary-neon);"><i class="fas fa-fire"></i> Tour Opening Concert</span>
+          </div>
+          <div style="text-align: right; color: var(--cyan-neon); font-size: 0.85rem; font-weight: 700;">
+            <i class="fas fa-star"></i> Featured Launch Event
+          </div>
+        </div>
+
+        <!-- Show 2 -->
+        <div class="tour-card" data-region="na">
+          <div class="tour-date-box">
+            <span class="tour-day">SEP 18</span>
+            <span class="tour-month">2026 • THU</span>
+          </div>
+          <div class="tour-venue-info">
+            <span class="tour-city">New York City, NY</span>
+            <span class="tour-arena"><i class="fas fa-map-marker-alt"></i> Madison Square Garden</span>
+          </div>
+          <div>
+            <span class="status-badge status-selling"><i class="fas fa-fire"></i> Selling Fast</span>
+          </div>
+          <div style="text-align: right; color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">
+            <i class="fas fa-building"></i> Arena Concert
+          </div>
+        </div>
+
+        <!-- Show 3 -->
+        <div class="tour-card" data-region="na">
+          <div class="tour-date-box">
+            <span class="tour-day">SEP 24</span>
+            <span class="tour-month">2026 • WED</span>
+          </div>
+          <div class="tour-venue-info">
+            <span class="tour-city">Los Angeles, CA</span>
+            <span class="tour-arena"><i class="fas fa-map-marker-alt"></i> SoFi Stadium</span>
+          </div>
+          <div>
+            <span class="status-badge status-limited"><i class="fas fa-exclamation-triangle"></i> Limited Availability</span>
+          </div>
+          <div style="text-align: right; color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">
+            <i class="fas fa-building"></i> Stadium Show
+          </div>
+        </div>
+
+        <!-- Show 4 -->
+        <div class="tour-card" data-region="eu">
+          <div class="tour-date-box">
+            <span class="tour-day">OCT 05</span>
+            <span class="tour-month">2026 • MON</span>
+          </div>
+          <div class="tour-venue-info">
+            <span class="tour-city">London, UK</span>
+            <span class="tour-arena"><i class="fas fa-map-marker-alt"></i> O2 Arena</span>
+          </div>
+          <div>
+            <span class="status-badge status-selling"><i class="fas fa-fire"></i> On Sale Now</span>
+          </div>
+          <div style="text-align: right; color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">
+            <i class="fas fa-building"></i> Arena Concert
+          </div>
+        </div>
+
+        <!-- Show 5 -->
+        <div class="tour-card" data-region="asia">
+          <div class="tour-date-box">
+            <span class="tour-day">NOV 02</span>
+            <span class="tour-month">2026 • MON</span>
+          </div>
+          <div class="tour-venue-info">
+            <span class="tour-city">Tokyo, Japan</span>
+            <span class="tour-arena"><i class="fas fa-map-marker-alt"></i> Tokyo Dome</span>
+          </div>
+          <div>
+            <span class="status-badge status-selling"><i class="fas fa-fire"></i> Selling Fast</span>
+          </div>
+          <div style="text-align: right; color: var(--text-muted); font-size: 0.85rem; font-weight: 600;">
+            <i class="fas fa-building"></i> Stadium Show
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" style="background: rgba(255,255,255,0.01);" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">MEDIA</span>
+        <h2 class="heading-lg">CONCERT & <span class="gradient-text">BEHIND THE SCENES</span></h2>
+        <p class="section-desc">Click any photo to open high-resolution gallery lightbox viewer.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/hero.png" alt="Live Concert Stadium" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Hyderabad Concert Rehearsals • Stage Setup</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/album1.png" alt="Quantum Eclipse Launch" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">30 Songs YouTube Release Artwork</div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/hero.png" alt="Stage Laser Performance" class="gallery-img" style="filter: hue-rotate(120deg);">
+          <div class="gallery-overlay">
+            <div class="gallery-caption">Pyrotechnics & Guitar Solos • World Tour</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Direct Contact Details Card -->
+        <div class="about-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <span class="section-tag"><i class="fas fa-headset"></i> DIRECT CONTACT</span>
+            <h3 class="heading-lg" style="margin: 10px 0 16px;">GET IN <span class="gradient-text">TOUCH</span></h3>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom: 28px;">
+              For immediate concert booking, press inquiries, management relations, or YouTube collaboration opportunities, contact our official representation directly.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:20px;">
+              <!-- Location / Address -->
+              <div style="display:flex; align-items:center; gap:16px; background:rgba(255,255,255,0.03); padding:16px 20px; border-radius:var(--radius-md); border:1px solid var(--border-glass);">
+                <div style="width:46px; height:46px; border-radius:50%; background:rgba(255, 204, 0, 0.12); color:var(--gold-neon); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">BAND HEADQUARTERS & VENUE</div>
+                  <div style="font-size:1.05rem; font-weight:800; color:#fff;">Hyderabad, Telangana, India</div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div style="display:flex; align-items:center; gap:16px; background:rgba(255,255,255,0.03); padding:16px 20px; border-radius:var(--radius-md); border:1px solid var(--border-glass);">
+                <div style="width:46px; height:46px; border-radius:50%; background:rgba(0, 229, 255, 0.12); color:var(--cyan-neon); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">INQUIRY HOTLINE / MOBILE</div>
+                  <a href="tel:7075920852" style="font-size:1.15rem; font-weight:800; color:var(--cyan-neon); letter-spacing:0.02em;">7075920852</a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div style="display:flex; align-items:center; gap:16px; background:rgba(255,255,255,0.03); padding:16px 20px; border-radius:var(--radius-md); border:1px solid var(--border-glass);">
+                <div style="width:46px; height:46px; border-radius:50%; background:rgba(255, 0, 85, 0.12); color:var(--primary-neon); display:flex; align-items:center; justify-content:center; font-size:1.2rem;">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">OFFICIAL EMAIL ADDRESS</div>
+                  <a href="mailto:tonystarkb777@gmail.com" style="font-size:1.05rem; font-weight:800; color:var(--primary-neon);">tonystarkb777@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-glass); display:flex; align-items:center; justify-content:space-between;">
+            <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fas fa-clock" style="color:var(--cyan-neon);"></i> 24h Response Time</span>
+            <span style="font-size:0.85rem; color:var(--text-muted);"><i class="fas fa-globe" style="color:var(--primary-neon);"></i> Hyderabad • Global</span>
+          </div>
+        </div>
+
+        <!-- Contact & Booking Inquiry Form -->
+        <div class="contact-form-card">
+          <span class="section-tag"><i class="fas fa-paper-plane"></i> BOOKING FORM</span>
+          <h3 class="heading-lg" style="margin: 10px 0 16px;">BOOKING & <span class="gradient-text">PRESS</span></h3>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom: 24px;">
+            Submit your detailed event requirements directly to our booking team.
+          </p>
+
+          <form id="bookingForm">
+            <div class="form-group">
+              <label class="form-label">FULL NAME / ORGANISATION</label>
+              <input type="text" class="form-input" placeholder="e.g. Live Nation / John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">INQUIRY TYPE</label>
+              <select class="form-select">
+                <option>Festival / Concert Booking</option>
+                <option>YouTube Media Collaboration</option>
+                <option>Press & Media Interview</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">MESSAGE</label>
+              <textarea class="form-textarea" rows="4" placeholder="Provide details about dates, venue capacity, proposed budget..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-cyan" style="width:100%;">
+              <i class="fas fa-paper-plane"></i> SUBMIT BOOKING INQUIRY
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Member Bio Modal -->
+  <div class="modal-overlay" id="memberModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('memberModal')"><i class="fas fa-times"></i></button>
+      <span class="section-tag" id="modalMemberRole">Lead Vocals & Guitar</span>
+      <h3 class="heading-md" id="modalMemberName" style="font-size:2rem; margin:10px 0 16px;">Xander "Viper" Vance</h3>
+      
+      <div style="background:rgba(255,255,255,0.03); padding:16px; border-radius:var(--radius-md); margin-bottom:20px; border:1px solid var(--border-glass);">
+        <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700; text-transform:uppercase;">OFFICIAL GEAR RIG</div>
+        <div id="modalMemberGear" style="color:var(--cyan-neon); font-weight:600; margin-top:4px;">Custom Gibson Les Paul, Marshall JCM800</div>
+      </div>
+
+      <p id="modalMemberBio" style="color:var(--text-muted); line-height:1.7; margin-bottom:20px;">Detailed biography text...</p>
+      
+      <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:var(--text-dim); border-top:1px solid var(--border-glass); padding-top:16px;">
+        <span>Hometown: <strong id="modalMemberHometown" style="color:#fff;">Los Angeles, CA</strong></span>
+        <span>Status: <strong style="color:var(--primary-neon);">Hyderabad Show in 10 Days</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal">
+    <div class="modal-card" style="max-width:900px; padding:20px;">
+      <button class="modal-close" onclick="closeModal('lightboxModal')"><i class="fas fa-times"></i></button>
+      <img id="lightboxImg" src="" alt="Gallery Lightbox Image" style="width:100%; height:500px; object-fit:cover; border-radius:var(--radius-md);">
+      <div id="lightboxCaption" style="margin-top:14px; font-weight:700; text-align:center; color:var(--cyan-neon);"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container" style="grid-template-columns: 2fr 1fr 1.5fr;">
+      <div>
+        <a href="#" class="logo" style="margin-bottom:14px;">
+          <i class="fas fa-star logo-star"></i>
+          <span>STAR<span style="color:var(--primary-neon);">X</span> LIVE</span>
+        </a>
+        <p style="color:var(--text-muted); font-size:0.9rem; max-width:340px;">
+          Official web portal of rockband StarX Live. Releasing 30 new songs on YouTube. © 2026 StarX Live Entertainment.
+        </p>
+
+        <div class="social-links">
+          <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube" style="background:#ff0000; border-color:#ff0000; color:#fff;"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+          <a href="#" class="social-icon" aria-label="Apple Music"><i class="fab fa-apple"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-title">NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Band</a></li>
+          <li><a href="#members">Lineup</a></li>
+          <li><a href="#tour">Hyderabad Show</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">DIRECT CONTACT</h4>
+        <ul class="footer-links">
+          <li style="color:var(--text-muted); font-size:0.9rem;">
+            <i class="fas fa-map-marker-alt" style="color:var(--gold-neon); margin-right:8px;"></i>
+            <span style="color:#fff; font-weight:700;">Hyderabad, Telangana, India</span>
+          </li>
+          <li style="color:var(--text-muted); font-size:0.9rem;">
+            <i class="fas fa-phone-alt" style="color:var(--cyan-neon); margin-right:8px;"></i>
+            <a href="tel:7075920852" style="color:var(--cyan-neon); font-weight:700;">7075920852</a>
+          </li>
+          <li style="color:var(--text-muted); font-size:0.9rem;">
+            <i class="fas fa-envelope" style="color:var(--primary-neon); margin-right:8px;"></i>
+            <a href="mailto:tonystarkb777@gmail.com" style="color:var(--primary-neon); font-weight:700;">tonystarkb777@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
